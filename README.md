@@ -37,7 +37,9 @@
 ### Configure
 
 1. Konfigurasi Router
+
 setiap router di config sesuai arah kabel terhadap subnet.
+
 sebagai contoh pada router Foosha akan di konfig terhadap **A5** (mengarah ke router Water7). maka router Foosha akan mengambil salah satu IP dari **A5** dan menggunakan subnet mask **A5** pada kabel yang mengarah ke Water7.
 
 ![config-foosha-water7](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/config-foosha-water7.PNG)
