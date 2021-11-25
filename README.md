@@ -375,22 +375,35 @@ iface eth0 inet static
 untuk routing sendiri sama seperti yang dilakukan pada CISCO, hanya saja diubah dalam bentuk command.
 
 FOOSHA :
+
 ![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-foosha.PNG)
 
+
 WATER7 :
+
 ![routing-water7](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-water7.PNG)
 
+
 PUCCI :
+
 ![routing-pucci](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-pucci.PNG)
 
+
 GUANHAO :
+
 ![routing-guanhao](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-guanhao.PNG)
 
+
 ALABASTA :
+
 ![routing-alabasta](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-alabasta.PNG)
 
+
 OIMO :
+
 ![routing-oimo](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-oimo.PNG)
 
+
 SEASTONE :
+
 ![routing-seastone](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-seastone.PNG)
