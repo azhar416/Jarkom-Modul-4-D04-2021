@@ -375,22 +375,22 @@ iface eth0 inet static
 untuk routing sendiri sama seperti yang dilakukan pada CISCO, hanya saja diubah dalam bentuk command.
 
 FOOSHA :
-![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-foosha.PNG)
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-foosha.PNG)
 
 WATER7 :
-![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-water7.PNG)
+![routing-water7](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-water7.PNG)
 
 PUCCI :
-![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-pucci.PNG)
+![routing-pucci](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-pucci.PNG)
 
 GUANHAO :
-![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-guanhao.PNG)
+![routing-guanhao](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-guanhao.PNG)
 
 ALABASTA :
-![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-alabasta.PNG)
+![routing-alabasta](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-alabasta.PNG)
 
 OIMO :
-![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-oimo.PNG)
+![routing-oimo](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-oimo.PNG)
 
 SEASTONE :
-![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-seastone.PNG)
+![routing-seastone](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-seastone.PNG)
