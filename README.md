@@ -63,3 +63,29 @@ sebagai contoh pada PC BLUENO yang terdapat pada subnet A6 Menggunakan IP pada A
 Lakukan pada Semua PC.
 
 ### Routing
+
+Karena Foosha merupakan persimpangan yang paling ideal, maka routing akan dilakukan dari Foosha ke seluruh PC yang tidak satu subnet dengan Foosha.
+
+sebagai contoh Foosha (Router) - Elena (PC).
+
+Elena berada pada subnet A13, maka Network dan Mask pada Foosha akan diisi NID dan Net Mask dari A13 sementara Next Hop akan diisi oleh IP dari Router yang mengarah ke Foosha dimana dalam hal ini adalah Router GUANHAO dengan kabel yang mengarah ke Foosha (Subnet A7).
+
+![foosha-elena](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/foosha-elena.PNG)
+
+setting pula pada setiap router yang dilewati oleh Foosha untuk sampai ke Elena (GUANHAO, OIMO). 
+
+![foosha-elena](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/guanhao-elena.PNG)
+
+![foosha-elena](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/oimo-elena.PNG)
+
+pada router SEASTONE akan disetting **Default Routing** untuk kembali ke router OIMO. OIMO juga akan ditambahkan **Default Routing** untuk kembali ke router GUANHAO. dan GUANHAO juga akan ditambahkan **Default Routing** untuk kembali ke router Foosha. sehinnga Foosha dapat mengenali Elena (PC).
+
+SEASTONE Default Routing
+
+![seastone-dr](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/seastone-dr.PNG)
+
+Lakukan hingga Foosha mengenali seluruh PC.
+
+## Routing dan Subnet pada GNS
+
+### VLSM
