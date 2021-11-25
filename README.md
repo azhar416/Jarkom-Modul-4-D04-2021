@@ -89,3 +89,308 @@ Lakukan hingga Foosha mengenali seluruh PC.
 ## Routing dan Subnet pada GNS
 
 ### VLSM
+
+1. Membuat Topology-nya 
+
+![topology-gns](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/topology-gns.PNG)
+
+2. Memilih Subnet Paling Optimal
+
+![bunder](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/bunder.PNG)
+
+3. Tentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan lakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
+
+![jumlah-alamat-ip](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/jumlah-alamat-ip.PNG)
+
+4. Buat pohon pembagian IP
+
+![pohon-vlsm](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/pohon-vlsm.PNG)
+
+5. Membuat tabel pembagian IP
+
+![pembagian-ip](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/pembagian-ip.PNG)
+
+### Configure
+
+1. Konfigurasi Router
+
+FOOSHA :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.4.1
+	netmask 255.255.252.0
+
+# Static config for eth1
+auto eth1
+iface eth1 inet static
+	address 10.23.0.5
+	netmask 255.255.255.252
+
+Static config for eth2
+auto eth2
+iface eth2 inet static
+#	address 192.168.2.2
+        address 10.23.0.1
+#	netmask 255.255.255.0
+	netmask 255.255.255.252
+
+# Static config for eth3
+auto eth3
+iface eth3 inet static
+	address 10.23.0.13
+	netmask 255.255.255.252
+
+# DHCP config for eth4
+auto eth4
+iface eth4 inet dhcp
+```
+
+WATER7 :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.8.1
+	netmask 255.255.252.0
+
+# Static config for eth1
+auto eth1
+iface eth1 inet static
+	address 10.23.0.9
+	netmask 255.255.255.252
+
+# Static config for eth2
+auto eth2
+iface eth2 inet static
+	address 10.23.0.6
+	netmask 255.255.255.252
+```
+
+PUCCI :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.0.10
+	netmask 255.255.255.252
+
+# Static config for eth1
+auto eth1
+iface eth1 inet static
+	address 10.23.0.129
+	netmask 255.255.255.128
+
+# Static config for eth2
+auto eth2
+iface eth2 inet static
+	address 10.23.24.1
+	netmask 255.255.248.0
+```
+
+GUANHAO :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.0.14
+	netmask 255.255.255.252
+
+# Static config for eth1
+auto eth1
+iface eth1 inet static
+	address 10.23.12.1
+	netmask 255.255.252.0
+
+# Static config for eth2
+auto eth2
+iface eth2 inet static
+	address 10.23.0.17
+	netmask 255.255.255.252
+
+# Static config for eth3
+auto eth3
+iface eth3 inet static
+	address 10.23.2.1
+	netmask 255.255.254.0
+```
+
+ALABASTA :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.2.2
+	netmask 255.255.254.0
+
+# Static config for eth1
+auto eth1
+iface eth1 inet static
+	address 10.23.0.33
+	netmask 255.255.255.240
+```
+
+OIMO :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.0.18
+	netmask 255.255.255.252
+
+# Static config for eth1
+auto eth1
+iface eth1 inet static
+	address 10.23.0.21
+	netmask 255.255.255.252
+
+# Static config for eth2
+auto eth2
+iface eth2 inet static
+	address 10.23.1.1
+	netmask 255.255.255.0
+```
+
+SEASTONE :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.1.2
+	netmask 255.255.255.0
+
+# Static config for eth1
+auto eth1
+iface eth1 inet static
+	address 10.23.16.1
+	netmask 255.255.252.0
+```
+
+2. Konfigurasi PC
+
+BLUENO :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.4.2
+	netmask 255.255.252.0
+	gateway 10.23.4.1
+```
+
+CIPHER :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.8.2
+	netmask 255.255.252.0
+	gateway 10.23.8.1
+```
+
+JIPANGU :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.0.130
+	netmask 255.255.255.128
+	gateway 10.23.0.129
+```
+
+CALMBELT :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.24.3
+	netmask 255.255.248.0
+	gateway 10.23.24.1
+```
+
+COURTYARD :
+```bash
+#Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.24.2
+	netmask 255.255.248.0
+	gateway 10.23.24.1
+```
+
+JABRA :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.12.2
+	netmask 255.255.252.0
+	gateway 10.23.12.1
+```
+
+MAINGATE :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.2.3
+	netmask 255.255.254.0
+	gateway 10.23.2.1
+```
+
+JORGE :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.0.34
+	netmask 255.255.255.240
+	gateway 10.23.0.33
+
+```
+
+ENIESLOBBY :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.1.3
+	netmask 255.255.255.0
+	gateway 10.23.1.1
+```
+
+ELENA :
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+	address 10.23.16.2
+	netmask 255.255.252.0
+	gateway 10.23.16.1
+```
+
+### ROUTING
+
+untuk routing sendiri sama seperti yang dilakukan pada CISCO, hanya saja diubah dalam bentuk command.
+
+FOOSHA :
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-foosha.PNG)
+
+WATER7 :
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-water7.PNG)
+
+PUCCI :
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-pucci.PNG)
+
+GUANHAO :
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-guanhao.PNG)
+
+ALABASTA :
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-alabasta.PNG)
+
+OIMO :
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-oimo.PNG)
+
+SEASTONE :
+![routing-foosha](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/routing-seastone.PNG)
