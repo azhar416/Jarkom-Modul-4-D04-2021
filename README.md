@@ -52,3 +52,14 @@ Lakukan hingga semua Subnet Terpenuhi.
 
 2. Konfigurasi Host (PC)
 
+untuk konfigurasi PC, Menggunakan IP pada Subnet yang tersambung pada PC tersebut.
+
+sebagai contoh pada PC BLUENO yang terdapat pada subnet A6 Menggunakan IP pada A6 tetapi yang tidak dipakai oleh Router yang tersambung pada A6. sedangkan untuk gateway-nya, menggunakan IP dari Router yang tersambung pada A6.
+
+![foosha-a6](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/foosha-a6.PNG)
+
+![blueno-pc](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/CIDR/blueno-pc.PNG)
+
+Lakukan pada Semua PC.
+
+### Routing
