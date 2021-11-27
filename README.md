@@ -339,16 +339,7 @@ iface eth0 inet static
 	gateway 10.23.2.1
 ```
 
-JORGE :
-```bash
-# Static config for eth0
-auto eth0
-iface eth0 inet static
-	address 10.23.0.34
-	netmask 255.255.255.240
-	gateway 10.23.0.33
 
-```
 
 ENIESLOBBY :
 ```bash
