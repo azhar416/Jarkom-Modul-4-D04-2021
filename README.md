@@ -407,3 +407,9 @@ OIMO :
 SEASTONE :
 
 ![routing-seastone](https://github.com/azhar416/Jarkom-Modul-4-D04-2021/blob/main/img/VLSM/routing-seastone.PNG)
+
+agar bisa mengakses internet pada foosha dapat menggunakan
+```bash
+iptables -t nat -A POSTROUTING -o eth4 -j MASQUERADE -s 10.23.0.0/16
+```
+
